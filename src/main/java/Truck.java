@@ -19,6 +19,6 @@ public class Truck extends Vehicle implements SpeedModel {
 
     @Override
     public double getSpeedMph() {
-        return Math.pow((getMasa() + getMasaLadunku()) / getKonieMechaniczne(), 1 / 3) * 5.825;
+        return Math.pow((getMasa() + getMasaLadunku()) / getKonieMechaniczne(), 1.0/3.0) * 5.825;
     }
 }//end of Truck

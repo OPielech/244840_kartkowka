@@ -20,6 +20,6 @@ public class Car extends Vehicle implements SpeedModel {
 
     @Override
     public double getSpeedMph() {
-        return Math.pow(getMasa() / getKonieMechaniczne(), 1 / 3) * 5.825;
+        return Math.pow(getMasa() / getKonieMechaniczne(), 1.0/3.0) * 5.825;
     }
 }//end of Car
